@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Test project for composer testing</title>
+    </head>
+    <body>
+        <h1>phpinfo()</h1>
+        <div id="phpinfo">
+        </div>
+        <script>
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'class/phpinfo.php', true);
+            xhr.onreadystatechange = function() {
+                console.log('xhr.readyState:', xhr.readyState);
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        document.getElementById('phpinfo').innerHTML = xhr.responseText;
+                    }
+                }
+            }
+            xhr.send();
+        </script>
+    </body>
+</html>

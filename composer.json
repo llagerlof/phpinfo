@@ -1,0 +1,15 @@
+{
+    "name": "llagerlof/phpinfo",
+    "description": "Test project for composer testing",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Lawrence Lagerlof",
+            "email": "llagerlof@gmail.com",
+            "homepage": "https://llagerlof.github.io",
+            "role": "Developer"
+        }
+    ]
+}
